@@ -16,4 +16,4 @@ class MyClient(discord.Client):
             await message.reply('Hello!', mention_author=True)
 
 client = MyClient()
-client.run('TOKEN')
+client.run(os.getenv('Token'))
